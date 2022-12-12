@@ -1,11 +1,13 @@
+#######
+# DynamoDB Facade v1.00
+#######
+
 import boto3
 import boto3.dynamodb.types
-import json
-from typing import Final
 import uuid
 from decimal import Decimal
 
-SCRUB_TRANSFORMS_TABLE: Final[str] = 'scrub_transforms'
+SCRUB_TRANSFORMS_TABLE = 'scrub_transforms'
 
 
 class DynamoDBFacade:
